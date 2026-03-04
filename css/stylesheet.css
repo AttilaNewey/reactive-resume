@@ -20,7 +20,7 @@
   margin-left: 5%;
     }
   .coursework {
-  height: 500px;   
+  max-height: 500px;   
   opacity: 1;
   margin-top: 0px;
   overflow: visible;
