@@ -19,6 +19,12 @@
   margin-right: 5%;
   margin-left: 5%;
     }
+  .coursework {
+  height: 500px;   
+  opacity: 1;
+  margin-top: 0px;
+  overflow: visible;
+  }
 }
 
 p {
@@ -122,6 +128,20 @@ h1 {
   margin-top: 0;
 }
 
+.class-list {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 1s ease;
+  margin-top: 0;
+}
+
+.coursework:hover .class-list {
+  max-height: 500px;   
+  opacity: 1;
+  margin-top: 0px;
+  
+}
 .education:hover .coursework {
   max-height: 500px;   
   opacity: 1;
@@ -131,7 +151,8 @@ h1 {
 .project-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
+  grid-column-gap: 25px;
+  grid-row-gap: 0px;
   width: 95%;
   overflow: hidden;
   max-height: 0;
@@ -150,14 +171,14 @@ h1 {
 .project {
   display: flex;
   align-items: center;
-  gap: 10px;
   transition: all 1s ease;
   border-radius: 25px;
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 5px;
   padding-right: 5px;
-  margin: 10px;
+  margin: 10px 7px 10px 10px;
+  z-index: 12;
 }
 
 .project > img {
