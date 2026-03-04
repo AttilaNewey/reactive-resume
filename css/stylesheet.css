@@ -39,6 +39,11 @@ h1 {
   text-align: center;
 }
 
+.exp-anim a {
+  text-decoration: none;
+  color: black;
+}
+
 .name {
   margin: 0px;
 }
@@ -138,10 +143,9 @@ h1 {
 
 .coursework:hover .class-list {
   max-height: 500px;   
-  opacity: 1;
-  margin-top: 0px;
-  
+  opacity: 1;  
 }
+
 .education:hover .coursework {
   max-height: 500px;   
   opacity: 1;
@@ -262,10 +266,6 @@ ul {
 .tab {
   cursor: pointer;
 }
-   
-.skillscontent div {
-  display: none;
-}
 
 .skillscontent a {
   width: 33%;
@@ -274,6 +274,23 @@ ul {
   transition: all 1s ease;
   border-radius: 25px;
   padding: 10px;
+}
+
+.skillscontent div {
+  box-sizing: border-box;
+  max-height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 2%; 
+  margin-left: 1%; 
+  margin-right: 1%; 
+      margin-top: -2px; 
+      z-index: 12; 
+      border-radius: 25px;
+  transition: all 1s ease;
 }
 
 .skillscontent a:hover {
